@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-root {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.search input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.search button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+.search button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pokemon-card {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.pokemon-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+.pokemon-name {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.error {
+  color: #b91c1c;
+  margin-bottom: 0.5rem;
+}
+.hint {
+  color: #666;
+  margin-top: 1rem;
+}
+
+.suggestions-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.suggestions-header .refresh {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem 0 1rem 0;
+}
+.suggestion-item {
+  padding: 0.35rem 0.6rem;
+  border-radius: 12px;
+  background: #eef2ff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.suggestion-item:hover {
+  background: #e0e7ff;
+}
+
+.details-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+.details-left img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+.details-right {
+  max-width: 360px;
+  text-align: left;
+}
+.details-right .meta {
+  display: flex;
+  gap: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+.details-right .types,
+.details-right .abilities {
+  margin-bottom: 0.5rem;
+}
+.details-right .stats ul {
+  margin: 0.25rem 0 0 1rem;
+}
+.id {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 0.5rem;
+}
